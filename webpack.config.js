@@ -20,7 +20,8 @@ var clientA = {
   ],
   output: {
     path: __dirname + '/dist',
-    filename: '[name].bundle.js'
+    filename: '[name].bundle.js',
+    publicPath: '/dist/'
   }
 };
 
@@ -42,8 +43,9 @@ var clientB = {
   ],
   output: {
     path: __dirname + '/dist',
-    filename: '[name].bundle.js'
+    filename: '[name].bundle.js',
+    publicPath: '/dist/'
   }
 };
 
-module.exports = [clientA, clientB];
+module.exports = [clientA, clientB];module.exports = [clientA, clientB];
